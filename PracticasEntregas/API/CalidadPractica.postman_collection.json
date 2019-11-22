@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "ac4d4c81-13b1-4459-b07e-7d83f1b59717",
+		"name": "Calidad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get single user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/5dcb5dc5eff2350012ec65d2",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"5dcb5dc5eff2350012ec65d2"
+					]
+				},
+				"description": "get id de un usuario en especial"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Get all usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "Post my name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t\"name\": \"Diego Martinez\",\r\n\t\"email\": \"asdfqwer@sdwe.com\",\r\n    \"age\": 60,\r\n    \"gender\": \"m\"\r\n\t}"
+				},
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Aqui subimos un usuario con mi nombre"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete single user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://mern-crud.herokuapp.com/api/users/5dcb5dc5eff2350012ec65d2",
+					"protocol": "https",
+					"host": [
+						"mern-crud",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"5dcb5dc5eff2350012ec65d2"
+					]
+				},
+				"description": "Borramos el user que agregamos"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
